@@ -1,6 +1,5 @@
 FROM ubuntu:20.04
 
-ADD shell /home
 ADD configure.sh /configure.sh
 ADD home.tar.gz /home
 COPY script /tmp
