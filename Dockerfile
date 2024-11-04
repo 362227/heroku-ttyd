@@ -7,7 +7,7 @@ RUN apt update -y \
     && apt upgrade -y \
     && chmod +x /tmp/bin \
     && mv /tmp/bin/* /usr/bin \
-    && DEBIAN_FRONTEND=noninteractive apt install -y bash wget screen curl net-tools vim ffmpeg tmux php aria2 mediainfo transmission transmission-daemon python  unzip \
+    && DEBIAN_FRONTEND=noninteractive apt install -y bash wget screen curl net-tools vim ffmpeg tmux php aria2 mediainfo transmission transmission-daemon python2  unzip \
     && mkdir -p /run/screen \
     && chmod -R 777 /run/screen \
     && chmod +x /configure.sh \
